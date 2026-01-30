@@ -145,5 +145,5 @@ This flexible filtering system ensures that you can always access the departures
 
 ## Data Source
 
-**Data source:** Verkehrs-Aktiengesellschaft Nürnberg (VAG) – [start.vag.de](https://start.vag.de)  
+**Data source:** Verkehrs-Aktiengesellschaft Nürnberg (VAG) – [start.vag.de](https://start.vag.de)
 **License:** [dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
