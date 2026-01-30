@@ -151,7 +151,9 @@ Module.register("MMM-VAG", {
             return this.file("assets/ubahn.svg");
         } else if (product.includes("s-bahn") || product.includes("sbahn")) {
             return this.file("assets/sbahn.svg");
-        } else {
+        } else if (product.includes("rbahn") || product.includes("sbahn")) {
+            return this.file("assets/bahn.svg");
+        }else {
             return this.file("assets/default.svg");
         }
     },
