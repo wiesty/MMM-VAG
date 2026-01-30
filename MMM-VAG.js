@@ -104,24 +104,25 @@ Module.register("MMM-VAG", {
 
             // Falls displayBundled aktiviert ist, füge alle einzigartigen Benachrichtigungen am Ende hinzu
             if (this.config.displayBundled && bundledNotifications.size > 0) {
-                bundledNotifications.forEach(notificationText => {
-                    const notificationRow = document.createElement("tr");
-                    const notificationCell = document.createElement("td");
-                    notificationCell.colSpan = 5;
-                    notificationCell.classList.add("notification-cell");
-                    const notificationContainer = document.createElement("div");
-                    notificationContainer.classList.add("scroll-container");
-                    const scrollNotification = document.createElement("div");
-                    scrollNotification.classList.add("scroll-text");
-                    scrollNotification.innerHTML = notificationText;
+                // Alle Benachrichtigungen in einer Zeile mit Trennzeichen
+                const combinedNotifications = Array.from(bundledNotifications).join(" • ");
+                
+                const notificationRow = document.createElement("tr");
+                const notificationCell = document.createElement("td");
+                notificationCell.colSpan = 5;
+                notificationCell.classList.add("notification-cell");
+                const notificationContainer = document.createElement("div");
+                notificationContainer.classList.add("scroll-container");
+                const scrollNotification = document.createElement("div");
+                scrollNotification.classList.add("scroll-text");
+                scrollNotification.innerHTML = combinedNotifications;
 
-                    this.setScrollAnimation(scrollNotification, this.config.scrollSpeed);
+                this.setScrollAnimation(scrollNotification, this.config.scrollSpeed);
 
-                    notificationContainer.appendChild(scrollNotification);
-                    notificationCell.appendChild(notificationContainer);
-                    notificationRow.appendChild(notificationCell);
-                    table.appendChild(notificationRow);
-                });
+                notificationContainer.appendChild(scrollNotification);
+                notificationCell.appendChild(notificationContainer);
+                notificationRow.appendChild(notificationCell);
+                table.appendChild(notificationRow);
             }
 
             wrapper.appendChild(table);
