@@ -140,3 +140,10 @@ This flexible filtering system ensures that you can always access the departures
 * **VAG API Integration**: Uses VAG's official API endpoints for real-time departure information.
 * **Stop ID Format**: Changed from string-based MVV IDs to numeric VGN IDs (e.g., `510` instead of `"de:09162:6"`).
 * **Product Detection**: Improved line icon detection for VAG's transport modes (Bus, Tram, U-Bahn, S-Bahn).
+
+---
+
+## Data Source
+
+**Data source:** Verkehrs-Aktiengesellschaft Nürnberg (VAG) – [start.vag.de](https://start.vag.de)  
+**License:** [dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
