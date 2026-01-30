@@ -1,0 +1,20 @@
+{
+  "name": "MMM-VAG",
+  "version": "0.0.1",
+  "description": "MagicMirror² Module to display public transport from Nürnberg (VAG) in Germany.",
+  "main": "MMM-VAG.js",
+  "author": "wiesty",
+  "license": "MIT",
+  "homepage": "https://github.com/wiesty/MMM-VAG",
+  "keywords": [
+    "magic mirror",
+    "public transport",
+    "vag",
+    "nürnberg",
+    "nuremberg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiesty/MMM-VAG"
+  }
+}
